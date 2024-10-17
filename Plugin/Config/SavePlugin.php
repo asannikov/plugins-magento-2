@@ -70,7 +70,7 @@ class SavePlugin
 
         if ($this->subject->getSection() == 'payment') {
             $this->checkCurrency();
-            $this->getTargetAccounts();
+            // $this->getTargetAccounts();
         }
     }
 
@@ -156,6 +156,9 @@ class SavePlugin
         }
     }
 
+    /**
+     * @deprecated  
+     */
     protected function getTargetAccounts()
     {
         if ($this->csConfig->isActive() && $this->csConfig->getAPIKey() && $this->csConfig->getSecretKey()) {

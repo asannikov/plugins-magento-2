@@ -15,6 +15,9 @@ use Magento\Framework\Data\Collection\AbstractDb;
 use LimeSoda\Cashpresso\Api\Account as ApiAccount;
 use LimeSoda\Cashpresso\Gateway\Config;
 
+/**
+ * @deprecated - was used in system.xml. Will be removed soon
+ */
 class Account extends \Magento\Framework\App\Config\Value
 {
     protected ReinitableConfigInterface $appConfig;

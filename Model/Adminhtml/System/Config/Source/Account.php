@@ -5,6 +5,9 @@ namespace LimeSoda\Cashpresso\Model\Adminhtml\System\Config\Source;
 use LimeSoda\Cashpresso\Gateway\Config;
 use Magento\Framework\Serialize\Serializer\Serialize;
 
+/**
+ * @deprecated - was used in system.xml. Will be removed soon
+ */
 class Account implements \Magento\Framework\Option\ArrayInterface
 {
     protected $accountApi;
@@ -44,6 +47,8 @@ class Account implements \Magento\Framework\Option\ArrayInterface
     }
 
     /**
+     * @deprecated
+     * 
      * @return array
      */
     public function getTargetAccounts()

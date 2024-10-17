@@ -19,7 +19,7 @@ then run the composer command in the folder where the composer.json file lies
 	
 or run the composer command for a specific version:
 
-    composer require limesoda/cashpresso2:v1.1.11
+    composer require limesoda/cashpresso2:v1.1.17
 
 	
 and then run 
@@ -41,15 +41,13 @@ and then run
     
    By default the cashpresso Payment Module is not activated. You need to get an API key and Secret Key, which you can find in your cashpresso account.
    Fill the fields API KEY and Secret Key in the magento settings and save your settings. (You can fill other settings also, but don't activate the payment method "Cashpresso" until you have saved your API Key and Secret Key).
-   Now you should receive the information of the settings in your cashpresso account:
-      
-   The option ```Target account``` will be available only, if target accounts exists in your cashpresso account. 
+   Now you should receive the information of the settings in your cashpresso account.
+       
     
 3. Options table 
   
    Option | Description | Dependency
    ------ | ----------- | ---
-   Account | Only needed, if you want to receive payments to different bank accounts on a per purchase basis. If not specified the purchase is paid to the main bank account. Please contact your account manager for more information on using multiple target bank accounts. Notice: You cannot create, edit or remove accounts in this module. |
    Mode | You can test the payment method "cashpresso" using the test mode. Its recommended to use the test mode at the beginning. |
    Title | This is the title of the payment method on the checkout page |
    Payment from Applicable Countries | You can set the filter to restrict the availability of the payment method "cashpresso" for specific countries. |
