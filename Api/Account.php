@@ -20,6 +20,7 @@ use Magento\Framework\Webapi\Exception;
 
 class Account extends Base
 {
+    /** @deprecated **/
     const METHOD_TARGET_ACCOUNTS = 'partner/targetAccounts';
 
     protected $postData;
@@ -40,11 +41,15 @@ class Account extends Base
     }
 
     /**
+     * @deprecated as target account is not used anymore. Later it will be removed completely 
+     * 
      * @throws Exception
      * @throws DomainException
      */
     public function getTargetAccounts()
     {
+        return [];
+
         if ($this->getConfig()->isDebugEnabled()) {
             $this->logger->debug(print_r($this->postData, true));
         }

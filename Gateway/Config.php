@@ -333,6 +333,8 @@ class Config extends \Magento\Payment\Gateway\Config\Config
     }
 
     /**
+     * @deprecated
+     * 
      * @return mixed
      */
     public function getTargetAccount()
@@ -341,6 +343,8 @@ class Config extends \Magento\Payment\Gateway\Config\Config
     }
 
     /**
+     * @deprecated
+     * 
      * @return mixed
      */
     public function getTargetAccounts()
